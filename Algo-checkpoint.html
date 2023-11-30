@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let phrase = prompt("Entrez une phrase se terminant par un point :");
+        let nbMots = 0;
+        let nbVoyelles = 0;
+  
+        for (let i = 0; i < phrase.length; i++) {
+          let c = phrase.charAt(i);
+          if (c === " ") {
+            nbMots++;
+          } else if (
+            c === "a" ||
+            c === "e" ||
+            c === "i" ||
+            c === "o" ||
+            c === "u" ||
+            c === "y"
+          ) {
+            nbVoyelles++;
+          }
+        }
+  
+        nbMots++; // Compter le dernier mot
+        console.log("Nombre de mots : " + nbMots);
+        console.log("Nombre de voyelles : " + nbVoyelles);
+      </script>
+    <h1>Algo-checkpoint</h1>
+   
+  </body>
+</html>
